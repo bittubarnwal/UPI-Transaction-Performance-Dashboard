@@ -1,0 +1,16 @@
+# Normalize text in Git and use consistent line endings on checkout.
+* text=auto
+*.md text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Power BI reports and packaged files are binary, not line-mergeable text.
+*.pbix binary
+*.pbit binary
+*.xlsx binary
+*.zip binary
+*.png binary
+*.jpg binary
+*.pdf binary
